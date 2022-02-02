@@ -1,0 +1,35 @@
+CHOICE: Start
+1: Test TestLottery
+2: Buy Out0
+3: DontBuy Out1
+ENDCHOICE
+
+LOTTERY: TestLottery
+1: Pass 0.8 Purchase
+2: Fail 0.2 Purchase
+ENDLOTTERY
+
+CHOICE: Purchase
+1: Buy CarLottery
+2: DontBuy Out2
+ENDCHOICE
+
+LOTTERY: CarLottery
+1: Lemon 0.1 Out3
+2: Peach 0.9 Out4
+ENDLOTTERY
+
+OUTCOME: Out0 28
+
+OUTCOME: Out1 0
+
+OUTCOME: Out2 -9
+
+OUTCOME: Out3 -109
+
+OUTCOME: Out4 51
+
+
+
+
+  

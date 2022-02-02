@@ -1,0 +1,19 @@
+INIT: CleanPan,-FriedEggs,-BoiledVegetables
+
+GOAL: FriedEggs,BoiledVegetables,Dinner,-CleanPan
+
+ACTION:  Mix
+PRECOND: FriedEggs,BoiledVegetables
+EFFECT:  Dinner
+
+ACTION:  Fry
+PRECOND: -FriedEggs,CleanPan
+EFFECT:  FriedEggs,-CleanPan
+
+ACTION:  Boil
+PRECOND: CleanPan,-BoiledVegetables
+EFFECT:  -CleanPan,BoiledVegetables
+
+ACTION:  Wash
+PRECOND: -CleanPan
+EFFECT:  CleanPan
